@@ -1,18 +1,3 @@
-window.dataLayer = window.dataLayer || [];
-<script>
-dataLayer.push({
-  event: "view_item",
-  ecommerce: {
-    items: [{
-      item_name: "{{ line_item.product.title }}",  
-      item_id: "{{line_item.id }}", 
-      price: {{ line_item.final_price | money_without_currency }},  
-      item_category: "{{ product.collections | join: ', ' }}" 
-    }]
-  }
-});
-</script>
-
 <section id="MainProduct-{{ section.id }}" class="page-width section-{{ section.id }}-padding" data-section="{{ section.id }}">
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
