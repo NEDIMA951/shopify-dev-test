@@ -43,33 +43,33 @@ __DL__jQueryinterval = setInterval(function(){
         };
         
         /**********************
-        * DYNAMIC DEPENDENCIES
-        ***********************/
+* DYNAMIC DEPENDENCIES
+***********************/
         
-        __DL__ = {
-            dynamicCart: true,  // if cart is dynamic (meaning no refresh on cart add) set to true
-            debug: true, // if true, console messages will be displayed
-            cart: null,
-            wishlist: null,
-            removeCart: null
-        };
+ __DL__ = {
+    dynamicCart: true,  // if cart is dynamic (meaning no refresh on cart add) set to true
+    debug: true, // if true, console messages will be displayed
+    cart: null,
+    wishlist: null,
+    removeCart: null
+};
         
-        customBindings = {
-            cartTriggers: [],
-            viewCart: [],
-            removeCartTrigger: [],
-            cartVisableSelector: [],
-            promoSubscriptionsSelectors: [],
-            promoSuccess: [],
-            ctaSelectors: [],
-            newsletterSelectors: [],
-            newsletterSuccess: [],
-            searchPage: [],
-            wishlistSelector: [],
-            removeWishlist: [],
-            wishlistPage: [],
-            searchTermQuery: [getURLParams('q')], // replace var with correct query
-        };
+customBindings = {
+    cartTriggers: [],
+    viewCart: [],
+    removeCartTrigger: [],
+    cartVisableSelector: [],
+    promoSubscriptionsSelectors: [],
+    promoSuccess: [],
+    ctaSelectors: [],
+    newsletterSelectors: [],
+    newsletterSuccess: [],
+    searchPage: [],
+    wishlistSelector: [],
+    removeWishlist: [],
+    wishlistPage: [],
+    searchTermQuery: [getURLParams('q')], // replace var with correct query
+};
         
         /* DO NOT EDIT */
         defaultBindings = {
