@@ -11,16 +11,10 @@
 
 	<script>
       function orderStatus() {
-         var customerType = {{customer.orders_count}};
-         customerType == 1 ? customerType = "new" : customerType = "repeat";
          window.dataLayer = window.dataLayer || [];
          dataLayer.push({
-             'event': 'GTMevent',
-             'eventCategory' : 'purchase',
-             'eventAction' : 'complete',
-             'eventLabel' : '{{customer.id}} | ' + customerType,
-             'customerId': '{{customer.id}}',
-             'customerType': customerType
+   'userId': {{customer.id | json}},
+});
          });
       }
       </script>
